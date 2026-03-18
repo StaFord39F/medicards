@@ -116,11 +116,11 @@ export default function App() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative z-10 bg-white p-4 rounded-[2.5rem] shadow-2xl shadow-indigo-100 border border-slate-100">
+            <div className="relative z-10 bg-white p-2 rounded-[2.5rem] shadow-2xl shadow-indigo-100 border border-slate-100">
               <img 
                 src="/promo/photo_2026-03-18_22-10-41.jpg" 
                 alt="Medicards ECG Set" 
-                className="rounded-[2rem] w-full h-auto object-cover aspect-[4/5]"
+                className="rounded-[2rem] w-full h-auto block"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-slate-100 flex items-center gap-4 max-w-xs">
@@ -215,9 +215,9 @@ export default function App() {
               </a>
             </div>
             <div className="relative">
-              <div className="aspect-[9/16] max-w-[350px] mx-auto bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl border-[8px] border-white relative">
+              <div className="max-w-[450px] mx-auto bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200 relative">
                 <video 
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto block"
                   autoPlay 
                   muted 
                   loop 
@@ -229,8 +229,8 @@ export default function App() {
                 </video>
               </div>
               {/* Decorative dots */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-indigo-200 rounded-full blur-2xl -z-10 opacity-50" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-200 rounded-full blur-3xl -z-10 opacity-50" />
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-indigo-200 rounded-full blur-3xl -z-10 opacity-30" />
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-200 rounded-full blur-3xl -z-10 opacity-30" />
             </div>
           </div>
         </div>
@@ -254,12 +254,12 @@ export default function App() {
               <motion.div 
                 key={i}
                 whileHover={{ scale: 1.02 }}
-                className={`relative rounded-3xl overflow-hidden shadow-lg border border-slate-100 ${img.span || ''}`}
+                className={`relative rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50 flex items-center justify-center ${img.span || ''}`}
               >
                 <img 
                   src={img.src} 
                   alt={img.alt} 
-                  className="w-full h-full object-cover aspect-square md:aspect-auto"
+                  className="w-full h-auto object-contain"
                   referrerPolicy="no-referrer"
                 />
               </motion.div>
