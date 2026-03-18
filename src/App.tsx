@@ -17,13 +17,13 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const heroImg = '/promo/photo_2026-03-18_22-10-41.jpg';
-const gallery1 = '/promo/photo_2026-03-18_22-10-59.jpg';
-const gallery2 = '/promo/photo_2026-03-18_22-11-03.jpg';
-const gallery3 = '/promo/photo_2026-03-18_22-11-06.jpg';
-const gallery4 = '/promo/photo_2026-03-18_22-11-10.jpg';
-const gallery5 = '/promo/photo_2026-03-18_22-11-12.jpg';
-const promoVideo = '/promo/IMG_6511.MP4';
+const heroImg = '/hero.jpg';
+const gallery1 = '/gallery1.jpg';
+const gallery2 = '/gallery2.jpg';
+const gallery3 = '/gallery3.jpg';
+const gallery4 = '/gallery4.jpg';
+const gallery5 = '/gallery5.jpg';
+const promoVideo = '/promo.mp4';
 
 const ECG_CARDS = [
   { title: 'Фундамент', desc: 'Провідна система, водії ритму, розрахунок ЧСС.', color: 'bg-blue-500' },
