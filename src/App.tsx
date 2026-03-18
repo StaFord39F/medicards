@@ -17,6 +17,14 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+import heroImg from './assets/promo/photo_2026-03-18_22-10-41.jpg';
+import gallery1 from './assets/promo/photo_2026-03-18_22-10-59.jpg';
+import gallery2 from './assets/promo/photo_2026-03-18_22-11-03.jpg';
+import gallery3 from './assets/promo/photo_2026-03-18_22-11-06.jpg';
+import gallery4 from './assets/promo/photo_2026-03-18_22-11-10.jpg';
+import gallery5 from './assets/promo/photo_2026-03-18_22-11-12.jpg';
+import promoVideo from './assets/promo/IMG_6511.MP4';
+
 const ECG_CARDS = [
   { title: 'Фундамент', desc: 'Провідна система, водії ритму, розрахунок ЧСС.', color: 'bg-blue-500' },
   { title: 'Синусові порушення', desc: 'Брадикардія, СССВ, синоатріальні блокади.', color: 'bg-indigo-500' },
@@ -118,7 +126,7 @@ export default function App() {
           >
             <div className="relative z-10 bg-white p-2 rounded-[2.5rem] shadow-2xl shadow-indigo-100 border border-slate-100">
               <img 
-                src="/promo/photo_2026-03-18_22-10-41.jpg" 
+                src={heroImg} 
                 alt="Medicards ECG Set" 
                 className="rounded-[2rem] w-full h-auto block"
                 referrerPolicy="no-referrer"
@@ -224,7 +232,7 @@ export default function App() {
                   playsInline
                   controls
                 >
-                  <source src="/promo/IMG_6511.MP4" type="video/mp4" />
+                  <source src={promoVideo} type="video/mp4" />
                   Ваш браузер не підтримує відео.
                 </video>
               </div>
@@ -245,11 +253,11 @@ export default function App() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { src: '/promo/photo_2026-03-18_22-10-59.jpg', alt: 'Приклад карток' },
-              { src: '/promo/photo_2026-03-18_22-11-03.jpg', alt: 'Упаковка Medicards' },
-              { src: '/promo/photo_2026-03-18_22-11-06.jpg', alt: 'Medicards в горах' },
-              { src: '/promo/photo_2026-03-18_22-11-10.jpg', alt: 'Набір карток ЕКГ' },
-              { src: '/promo/photo_2026-03-18_22-11-12.jpg', alt: 'Детальний опис карток', span: 'md:col-span-2' },
+              { src: gallery1, alt: 'Приклад карток' },
+              { src: gallery2, alt: 'Упаковка Medicards' },
+              { src: gallery3, alt: 'Medicards в горах' },
+              { src: gallery4, alt: 'Набір карток ЕКГ' },
+              { src: gallery5, alt: 'Детальний опис карток', span: 'md:col-span-2' },
             ].map((img, i) => (
               <motion.div 
                 key={i}
@@ -363,10 +371,9 @@ export default function App() {
             <ShoppingBag className="w-10 h-10" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Готові зробити діагностику впевненою?</h2>
-          <p className="text-lg text-slate-600 mb-4 leading-relaxed">
+          <p className="text-lg text-slate-600 mb-12 leading-relaxed">
             Замовляйте набір Medicards прямо зараз через Instagram.
           </p>
-          <p className="text-indigo-600 font-bold text-3xl mb-12">790 грн</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="https://www.instagram.com/medicards.ua/" 
