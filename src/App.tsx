@@ -17,13 +17,13 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-import heroImg from './assets/promo/photo_2026-03-18_22-10-41.jpg';
-import gallery1 from './assets/promo/photo_2026-03-18_22-10-59.jpg';
-import gallery2 from './assets/promo/photo_2026-03-18_22-11-03.jpg';
-import gallery3 from './assets/promo/photo_2026-03-18_22-11-06.jpg';
-import gallery4 from './assets/promo/photo_2026-03-18_22-11-10.jpg';
-import gallery5 from './assets/promo/photo_2026-03-18_22-11-12.jpg';
-import promoVideo from './assets/promo/IMG_6511.MP4';
+const heroImg = '/promo/photo_2026-03-18_22-10-41.jpg';
+const gallery1 = '/promo/photo_2026-03-18_22-10-59.jpg';
+const gallery2 = '/promo/photo_2026-03-18_22-11-03.jpg';
+const gallery3 = '/promo/photo_2026-03-18_22-11-06.jpg';
+const gallery4 = '/promo/photo_2026-03-18_22-11-10.jpg';
+const gallery5 = '/promo/photo_2026-03-18_22-11-12.jpg';
+const promoVideo = '/promo/IMG_6511.MP4';
 
 const ECG_CARDS = [
   { title: 'Фундамент', desc: 'Провідна система, водії ритму, розрахунок ЧСС.', color: 'bg-blue-500' },
